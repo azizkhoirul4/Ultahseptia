@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Untukmu Septia</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .background-blur {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('Bk2.jpg') center center no-repeat;
+      background-size: cover;
+      filter: blur(25px);
+      transform: scale(1.1);
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      z-index: -1;
+    }
+
+    .main-image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-image {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-blur"></div>
+  <div class="overlay"></div>
+
+  <div class="main-image-container">
+    <img src="Bk2.jpg" class="main-image" alt="Foto Ulang Tahun">
+  </div>
+
+</body>
+</html>
